@@ -1,5 +1,5 @@
 # Dyniq-Qwen-1
-
+README
 **Parameter-efficient fine-tuning and serving of Qwen3-4B on a single commodity GPU.**
 
 Dyniq-Qwen-1 is an end-to-end LLM pipeline: it fine-tunes [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B) with **QLoRA** (4-bit NF4 quantization plus Low-Rank Adapters) and serves the result through a lightweight, API-key-protected REST endpoint. The full training run fits on a **16 GB NVIDIA T4** (Google Colab free tier). The only artifact it produces is a LoRA adapter of about 130 MB, which loads on top of the unchanged base model at inference time.
